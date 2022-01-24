@@ -6,22 +6,67 @@
 -->
 <html lang="en"> 
     <head> 
-        <title>Page Title</title>	
+        <title>Contact Me</title>
+        <style>
+            h1 {
+              text-align: center;
+            }
+        </style>	
     </head> 
     
     <body>
         <header>
-            <h1>Main Title</h1>
+            <h1>Contact</h1>
         </header>
 
         <nav> <!-- The nav element will include navigation buttons or links -->
             <hr> 
-            <p><a href="index.html">Home</a></p> 
-            <p><a href="projects.html">Projects</a></p>
-            <p><a href="contact.html">Contact Me</a></p>
-            <p><a href="testimonials.html">Testimonials</a></p>
+            <table border="0"; width="100%"; border-spacing: 30px>
+                <tr>
+                    <th><a href="index.html">Home</th>
+                    <th><a href="projects.html">Projects</a></th>
+                    <th><a href="contact.html">Contact Me</a></th>
+                    <th><a href="testimonials.html">Testimonials</a></th>
+                </tr>
+            </table>
             <hr>
         </nav>
+        <h2>Information Request</h2>
+        <form action="submit.html" method="POST"></form>
+            <label for="firstName">First Name:</label> <br>
+            <input type="text" id="firstName" name="firstName"> <br>
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName"> <br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" id="phone" name="phone"> <br>
+            <label for="contact">Best time to call:</label><br>
+            <select id="contact" name="contact">
+                <option value="default" selected>--Select One--</option>
+                <option value="morning">Morning (8AM to 12PM Eastern)</option>
+                <option value="afternoon">Afternoon (12PM to 5PM Eastern)</option>
+                <option value="evening">Evening (5PM to 8PM Eastern)</option>
+            </select>
+            <fieldset>
+                <legend>I am interested in (check all that apply)</legend><br>
+                     <input type="checkbox" id="frontEnd" name="interest" value="frontEnd">
+                     <label for="frontEnd">Front End Web Development</label><br>
+                     <input type="checkbox" id="backEnd" name="interest" value="backEnd">
+                     <label for="backEnd">Back End Web Development</label>
+                     <input type="checkbox" id="database" name="interest" value="database">
+                     <label for="database">Database Design</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>I have filled in the client questionnaire form:</legend><br>
+                    <input type="radio" id="choice1" name="questionnaire" value="yes">
+                    <label for="choice1">Yes</label><br>
+                    <input type="radio" id="choice2" name="questionnaire" value="no">
+                    <label for="choice2">No</label><br>
+                </fieldset>
+                <label for="info">Additional Information</label><br>
+                <textarea id="info" name="info"></textarea>
+                <br>
+                <input type="submit" name="submit" value="Submit">
+
 
 
         <footer>
