@@ -1,36 +1,49 @@
-<!DOCTYPE html>
-<!--
-Name: Alex Kaszynski
-Date Created: 1/24/21
-Most recent revision:
--->
-<html lang="en">
-	<head>
-		<title>Alex Kaszynski's Portfolio</title>	
-	</head>
-	<body>
-        <h1>Portfolio for Alex Kaszynski</h1>
-        
-        <hr>
-        <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
-        <p>Links to our pages will go here</p>
-        <hr>
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <title>Alex Kaszynski's Portfolio</title>	
+    </head> 
+    
+    <body>
+        <main> <!-- The main element contains all blocks on the page -->
+            <header> <!-- The header element contains only the main title at this point. -->
+                <h1>Portfolio for Alex Kaszynski</h1>
+            </header>
 
-        <h2><em> About Me </em></h2>
-        <article id="about-me">I'm half polish and have traveled frequently to and from europe.<br>I feel sorta average from my own perspective, and think I'm kinda lazy. </article>
-        <p></p>
+            <nav> <!-- The nav element will include navigation buttons or links -->
+                <hr> 
+                <p><a href="index.html">Home</a></p> 
+                <p><a href="projects.html">Projects</a></p>
+                <p><a href="contact.html">Contact Me</a></p>
+                <p><a href="testimonials.html">Testimonials</a></p>
+                <hr>
+            </nav>
 
-        <h2><em>Past Experiences</em></h2>
-        <article id="past-exp">I'm a proud Eagle Scout</I>.<br>I've also graduated college with a Bachelors in Computer Science.</article>
-        <p></p>
+            <section> <!-- The section element contains the three chunks we are using to sell ourselves in this page. -->
+                <article id="about"> <!-- This is the first chunk inside the section element. -->
+                      <h2><em>About Me</em></h2> 
+                      <img src="images/IMG-3724.jpg" alt="Portrait of Alex Kaszynski" width=300px>
+                      <p>I'm half polish and have traveled frequently to and from europe.<br>I feel sorta average from my own perspective, and think I'm kinda lazy.</p> 
+                      <p></p>
+                </article>
 
-        <h2><em>Hobbies</em></h2>
-        <article id="hobbies">I often spend my offtime playing video games with my friends who've either since moved away or whom I've moved from. <br> Otherwise I'm spending my time drawing or making pixel art.</article>
-        <p></p>
-        <footer> 
-            <hr>
-            <p>&copy; 2022 Alex Kaszynski. All rights reserved.</p>
-       </footer>
+                <article id="experience"> <!-- This is the second chunk inside the section element. -->
+                    <h2><em>Past Experiences</em></h2> 
+                    <img src="images/Evening_Skyline_L.png" alt="Pixel Art depicting travel Art" width=300px>
+                    <p>I'm a proud Eagle Scout</I>.<br>I've also graduated college with a Bachelors in Computer Science.</p> 
+                    <p></p>
+                </article>
+
+                <article id="hobbies"> <!-- This is the third chunk inside the section element. -->
+                    <h2><em>Hobbies</em></h2> 
+                    <img src="images/Clouds_at_Midday_L.png" alt="Pixel Art made by Alex Kaszynski" width=300px>
+                    <p>I often spend my offtime playing video games with my friends who've either since moved away or  .</p>
+                    <p>Otherwise I'm spending my time drawing or making pixel art.</p>
+                </article>
+            </section>
+            <footer> 
+                <hr>
+                <p>&copy; 2022 Alex Kaszynski. All rights reserved.</p>
+        </footer>
 	</body>
 </html>
-
