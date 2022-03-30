@@ -58,7 +58,7 @@ export default function Navbar() {
               float: "right",
               borderRadius: "8px",
             }}>
-              <NavLink style={{color:"white",textDecoration: "none",}} to="/">
+              <NavLink style={{color:"white",textDecoration: "none",}} to="/login">
                 Login
               </NavLink>
           </button>

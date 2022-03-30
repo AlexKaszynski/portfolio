@@ -13,13 +13,14 @@ const App = () => {
     setLogin(newLog.name);
     console.log(login);
   };
+  document.title = "Home";
   return (
     <div>
       <Navbar />
       <Routes>
         <Route
           exact
-          path="/"
+          path="/login"
           element={<Login changeLogin={changeLogin} login={login} />}
         />
         <Route path="/bugs" element={<RecordList />} />
