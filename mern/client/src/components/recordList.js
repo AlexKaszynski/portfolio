@@ -15,7 +15,7 @@ function timeDiff(date) {
 
 const Record = (props) => (
   <div id="card" className="w3-container"  style={{ border: "none" }}>
-    <div className="w3-card-4" style={{ maxWidth: "50%", borderRadius: "8px" }}>
+    <div className="w3-card-4" style={{ maxWidth: "50%", borderRadius: "8px", backgroundColor: "white"}}>
       <header
         className="w3-container"
         style={{

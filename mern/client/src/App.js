@@ -5,6 +5,7 @@ import RecordList from "./components/recordList";
 import Edit from "./components/edit";
 import Create from "./components/create";
 import Login from "./components/login";
+import "./myStyle.css";
 
 const App = () => {
   const [login, setLogin] = useState("Anonymous");
@@ -15,7 +16,7 @@ const App = () => {
   };
   document.title = "Home";
   return (
-    <div>
+    <div className="app-container">
       <Navbar />
       <Routes>
         <Route
@@ -32,3 +33,7 @@ const App = () => {
 };
 
 export default App;
+
+//<Route path="/" element={<Home />} />
+//<Route path="/about" element={<About />} />
+//<Route path="/gallery" element={<Gallery />} />

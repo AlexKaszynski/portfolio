@@ -1,15 +1,17 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css"; // We import bootstrap to make our application look better.
+import "../myStyle.css"; // We import bootstrap to make our application look better.
 import { NavLink } from "react-router-dom"; // We import NavLink to utilize the react router.
 
 export default function Navbar() {
   return (
-    <div>
-      <NavLink className="navbar-header" to="/">
-        <h1>Home</h1>
+    <header style={{position: "fixed", top: 0, width: "100%"}}>
+      
+    <div className="navbar-container">
+      <NavLink to="/">
+        <div className="nav-home">Home</div>
       </NavLink>
 
-      <nav className="App-Header">
+      <nav className="nav">
         <ul>
           <NavLink to="/about">
             <li>About Me</li>
@@ -29,5 +31,6 @@ export default function Navbar() {
         </ul>
       </nav>
     </div>
+    </header>
   );
 }
