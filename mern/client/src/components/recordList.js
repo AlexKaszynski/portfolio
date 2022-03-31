@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import "../myStyle.css";
 
 function timeDiff(date) {
   let oldTime = new Date(date);
@@ -14,8 +15,11 @@ function timeDiff(date) {
 }
 
 const Record = (props) => (
-  <div id="card" className="w3-container"  style={{ border: "none" }}>
-    <div className="w3-card-4" style={{ maxWidth: "50%", borderRadius: "8px", backgroundColor: "white"}}>
+  <div id="card" className="w3-container" style={{ border: "none" }}>
+    <div
+      className="w3-card-4"
+      style={{ maxWidth: "50%", borderRadius: "8px", backgroundColor: "white" }}
+    >
       <header
         className="w3-container"
         style={{
@@ -125,6 +129,55 @@ export default function RecordList() {
   // Display Items
   return (
     <div>
+      <div className="App-Header">
+        <br />
+        <button
+          style={{
+            backgroundColor: "#282c34",
+            border: "none",
+            color: "white",
+            marginTop: "-10px",
+            padding: "10px 32px",
+            textAlign: "center",
+            textDecoration: "none",
+            display: "inline-block",
+            fontSize: "16px",
+            float: "right",
+            borderRadius: "8px",
+          }}
+        >
+          <NavLink
+            style={{ color: "white", textDecoration: "none" }}
+            to="/create"
+          >
+            Create New Bug
+          </NavLink>
+        </button>
+        <button
+          style={{
+            backgroundColor: "#282c34",
+            border: "none",
+            color: "white",
+            margin: "5px",
+            marginTop: "10px",
+            padding: "10px 32px",
+            textAlign: "center",
+            textDecoration: "none",
+            display: "inline-block",
+            fontSize: "16px",
+            float: "center",
+            borderRadius: "8px",
+          }}
+        >
+          <NavLink
+            style={{ color: "white", textDecoration: "none" }}
+            to="/login"
+          >
+            Login
+          </NavLink>
+        </button>
+      </div>
+
       <br />
       <h3
         style={{

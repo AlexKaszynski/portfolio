@@ -1,10 +1,12 @@
 .app-container {
-  background: black;
+  background: #3e6378;
   color: #3e6378, #213a49, #162630;
   margin: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 12px;
   font-weight: 300;
+  font-size: 20px;
+  margin-top: 50px;
+  height: 100%;
 }
 
 header {
@@ -17,7 +19,6 @@ header::after {
 }
 .navbar-container {
   font-size: 100%;
-
   width: 90%;
   margin: 0 auto;
 }
@@ -37,7 +38,7 @@ header::after {
 }
 
 .nav {
-    display:center;
+  display: center;
   font-size: 20px;
   float: right;
   color: #3e6378;
@@ -52,7 +53,7 @@ nav li {
   display: inline-block;
   margin-left: 40px;
   padding-top: 20px;
-  padding-bottom:5px;
+  padding-bottom: 5px;
   position: relative;
 }
 nav li {
@@ -69,7 +70,7 @@ nav li::before {
   height: 5px;
   background-color: #3e6378;
   position: absolute;
-  bottom:0;
+  bottom: 0;
   width: 0%;
   transition: all ease-in-out 250ms;
 }

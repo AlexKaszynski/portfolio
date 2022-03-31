@@ -7,7 +7,7 @@ export default function Navbar() {
     
     <div>
       <nav className="App-Header">
-        <NavLink className="navbar-brand" to="/bugs">
+        <NavLink className="navbar-brand" to="/buglist">
           <h1
             className="App-header"
             style={{

@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"; // We import NavLink to utilize the 
 
 export default function Navbar() {
   return (
-    <header style={{position: "fixed", top: 0, width: "100%"}}>
+    <header style={{position: "fixed", top: 0, width: "100%",  marginBottom: "500px"}}>
       
     <div className="navbar-container">
       <NavLink to="/">

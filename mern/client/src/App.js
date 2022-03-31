@@ -5,6 +5,7 @@ import RecordList from "./components/recordList";
 import Edit from "./components/edit";
 import Create from "./components/create";
 import Login from "./components/login";
+import Home from "./components/home";
 import "./myStyle.css";
 
 const App = () => {
@@ -19,12 +20,13 @@ const App = () => {
     <div className="app-container">
       <Navbar />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route
           exact
           path="/login"
           element={<Login changeLogin={changeLogin} login={login} />}
         />
-        <Route path="/bugs" element={<RecordList />} />
+        <Route path="/buglist" element={<RecordList />} />
         <Route path="/edit/:id" element={<Edit />} />
         <Route path="/create" element={<Create login={login} />} />
       </Routes>
@@ -34,6 +36,6 @@ const App = () => {
 
 export default App;
 
-//<Route path="/" element={<Home />} />
+//
 //<Route path="/about" element={<About />} />
 //<Route path="/gallery" element={<Gallery />} />
