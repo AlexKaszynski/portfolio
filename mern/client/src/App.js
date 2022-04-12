@@ -19,17 +19,19 @@ const App = () => {
   return (
     <div className="app-container">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route
-          exact
-          path="/login"
-          element={<Login changeLogin={changeLogin} login={login} />}
-        />
-        <Route path="/buglist" element={<RecordList />} />
-        <Route path="/edit/:id" element={<Edit />} />
-        <Route path="/create" element={<Create login={login} />} />
-      </Routes>
+      <div id="body">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            exact
+            path="/login"
+            element={<Login changeLogin={changeLogin} login={login} />}
+          />
+          <Route path="/buglist" element={<RecordList />} />
+          <Route path="/edit/:id" element={<Edit />} />
+          <Route path="/create" element={<Create login={login} />} />
+        </Routes>
+      </div>
     </div>
   );
 };

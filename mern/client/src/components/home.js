@@ -4,8 +4,8 @@ import "../myStyle.css";
 
 export default function Login() {
   return (
-    <div>
-     
+    <div className="home-content">
+     Home Text
     </div>
   );
 }
