@@ -6,6 +6,9 @@ import Edit from "./components/edit";
 import Create from "./components/create";
 import Login from "./components/login";
 import Home from "./components/home";
+import Projects from "./components/projects";
+//import About from "./components/about";
+//import Gallery from "./components/gallery";
 import "./myStyle.css";
 
 const App = () => {
@@ -30,6 +33,7 @@ const App = () => {
           <Route path="/buglist" element={<RecordList />} />
           <Route path="/edit/:id" element={<Edit />} />
           <Route path="/create" element={<Create login={login} />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </div>
     </div>
@@ -38,6 +42,7 @@ const App = () => {
 
 export default App;
 
-//
+
 //<Route path="/about" element={<About />} />
 //<Route path="/gallery" element={<Gallery />} />
+//<Route path="/placeholder" element={<Placeholder />} />

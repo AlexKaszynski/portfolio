@@ -3,7 +3,7 @@ import "../myStyle.css";
 import profile from "../images/IMG-3724.png";
 //import { useNavigate } from "react-router";
 
-export default function Login() {
+export default function Home() {
   return (
     <div>
       <div className="home-title">Home</div>
@@ -21,7 +21,7 @@ export default function Login() {
         - make footer elements that link to different social sites (LinkedIn,
         Github, Handshake, etc.) that stick to the bottom of the page
         <br />
-        - Fill in about page with resume information
+        - Change Navbar to have different color for each link, respective to the logo on the left.
         <br />
         - Have links in Projects page linking to my different public Github Projects
         <br />

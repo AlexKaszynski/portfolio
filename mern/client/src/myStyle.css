@@ -1,6 +1,7 @@
 html {
   min-height: 100%;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -15,6 +16,7 @@ body {
 .app-container {
   background-color: #3e6378;
   color: #3e6378, #213a49, #162630;
+  color: #bfbe7a, #a9b888, #8eb192, #5ea089, #00aaa9, #0d9ba1,#038089, #2b707e;
   margin: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 300;
@@ -35,8 +37,25 @@ footer {
   width: 100%;
   bottom: 0;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  margin-top: 9vh;
+}
+/* Track : tried to make the background transparent but is not working as intended. Hotfixed to be same color as background*/
+::-webkit-scrollbar-track {
+  background: #3e6378;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #313131;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1c1c1c;
+}
 
-.home-title{
+.home-title {
   font-size: 48px;
   padding-top: 10%;
   padding-left: 23%;
@@ -49,11 +68,16 @@ footer {
   color: white;
   font-size: 20px;
 }
-.home-todo{
+.home-todo {
   font-size: 32px;
-  padding-top: 5%;
   padding-left: 23%;
   padding-right: 25%;
+}
+.home-image {
+  margin: 5px;
+  height: 45%;
+  width: 45%;
+  float: center;
 }
 
 header::after {
@@ -70,22 +94,21 @@ header::after {
 }
 
 .nav-logo {
-  
-  margin: 3px;
+  margin: 4px;
   height: 78px;
   width: 104px;
   float: left;
+  /*Make size never change even when webpage size changes. If successful change navbar font to be the same*/
 }
 
 .nav {
   display: center;
-  font-size: clamp(8px, 2vw, 28px);
+  font-size: clamp(8px, 1.5vw, 28px);
   float: center;
   color: #3e6378;
 }
 nav ul {
   float: center;
-  margin-left: 10%;
   padding: 0;
   list-style: none;
 }
