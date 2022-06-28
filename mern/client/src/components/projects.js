@@ -28,7 +28,7 @@ export default function Projects() {
       </div>
       <div className="home-todo">
         Projects ToDo List:<br></br>
-        - make table using images above
+        - make table based on images above
         <br />
       </div>
     </div>
